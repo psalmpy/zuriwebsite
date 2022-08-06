@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Graphik;
+    letter-spacing: 0.00938em;
+}
+header{
+    display: flex;
+    align-items: center;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    padding: 0% 10% 10px;
+    justify-content: space-between;
+    height: fit-content;
+    background-color: #fff;
+}
+
+header a:link, a:visited{
+    text-decoration: none;
+    color: #161617;
+    font-size: 16px;
+    box-sizing: content-box;
+}
+
+.nav-bar{
+    display: flex;
+    width: 45%;
+    justify-content: space-between;
+    align-items: center;
+}
+.not-mobile{
+    padding: 16px 0px;
+}
+.not-mobile:hover{
+    background-color: #5f85a515;
+}
+
+.hire-btn{
+    border: 0;
+    outline: 0;
+    padding: 11px 35px;
+    border-bottom-right-radius: 10px;
+    background-color: #e7332b;
+    font-size: 16px !important;
+    font-family: Graphik;
+    color: #fff;
+}
+
+header a:active, .current{
+    border-bottom: 3px solid #e7332b;
+}
+
+/* HEADER RESPONSIVENESS */
+@media screen and (max-width: 768px){
+    .not-mobile{
+        display: none;
+    }
+    header{
+        padding: 10px 10px 20px 20px;
+    }
+    .nav-bar{
+        width: fit-content;
+    }
+}
+@media screen and (max-width: 375px){
+    header{
+        padding-right: 15px;
+    }
+}
